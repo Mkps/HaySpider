@@ -20,6 +20,12 @@ Potential improvement: The fact that multiple address are targeted means that a 
 
 In pseudo-code, what the program will do once the parsing is done is:
 - Add the root URL to a stack. 
-- Find all URLs within the page and add them to the stack if they are inside the website and are not inside the stack.
-- Get all images from the current page matching the file extension.
+- Find all URLs within the page and add them to the queue channel if they are inside the website and are not inside the stack.
+- Check if the content of the current page should be investigated further.
+- If so, parse the content looking for target -> if target is found download the file
 - Go to the next item in the stack.
+
+## WIP
+- Needs to add runtime option to set target
+- Refactor to reduce argument count / set up a struct
+- Create a log linking url addresses and files.
