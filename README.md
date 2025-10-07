@@ -1,6 +1,6 @@
-# ft_spider
+# Hay_Spider
 
-A performance aware crawler/image-extractor written in Golang. Learning project / Open to code reviews.
+A performance aware crawler/spider written in Golang helping you find a specific string or pattern inside a given website. Learning project / Open to code reviews.
 
 ## Why Go?
 
