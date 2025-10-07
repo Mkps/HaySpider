@@ -23,7 +23,7 @@ In pseudo-code, what the program will do once the parsing is done is:
 - Find all URLs within the page and add them to the queue channel if they are inside the website and are not inside the stack.
 - Check if the content of the current page should be investigated further.
 - If so, parse the content looking for target -> if target is found download the file
-- Go to the next item in the stack.
+- Go to the next item in the queue.
 
 ## WIP
 - Needs to add runtime option to set target
